@@ -1,4 +1,4 @@
-# Marketing Exploratory Data & Statistical Analysis
+# Marketing Exploratory Data & Statistical Analysis Using Python
 
 ## Project Overview
 <p> This project focuses on cleaning, analyzing, and visualizing a marketing dataset to gain insights into customer demographics, purchasing behaviors, and trends. The analysis includes data cleaning, handling missing values, identifying and removing outliers, and performing feature engineering to improve the dataset for further analysis and modeling. </p>
