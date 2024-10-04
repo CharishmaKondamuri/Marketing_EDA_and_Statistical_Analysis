@@ -47,20 +47,21 @@ filtered_data1 = filtered_data1[~filtered_data1['Marital_Status'].isin(['Alone',
 
 ## Feature Engineering
 #### i) Total Purchases:
-- Created a new feature Total_Purchases, representing the sum of purchases made through different channels (Web, Store, Catalog).
+<p>Created a new feature Total_Purchases, representing the sum of purchases made through different channels (Web, Store, Catalog).</p>
+
 ```
 # Create Total Purchases feature
 filtered_data2['Total_Purchases'] = filtered_data2['NumWebPurchases'] + filtered_data2['NumStorePurchases'] + filtered_data2['NumCatalogPurchases']
 ```
 #### ii) Income vs Spending Analysis:
-- Analyzed the relationship between customer income and their spending on various product categories. This helps in identifying high-value customers based on their purchasing patterns.
+<p>Analyzed the relationship between customer income and their spending on various product categories. This helps in identifying high-value customers based on their purchasing patterns.</p>
 
 ```
 # Scatter plot: Income vs Total Spending
 sns.scatterplot(x=filtered_data2['Income'], y=filtered_data2['Total_Spending'])
 ```
 #### iii) Country-wise Spending on Wines:
-- Performed an analysis of wine spending across different countries to identify regions with the highest expenditure.
+<p>Performed an analysis of wine spending across different countries to identify regions with the highest expenditure.</p>
 
 ```
 # Country-wise spending on wines
