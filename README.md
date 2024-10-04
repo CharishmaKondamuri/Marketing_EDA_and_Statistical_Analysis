@@ -8,7 +8,7 @@
 ## Dataset
 <p>The dataset used for this project was sourced from <a href="https://www.kaggle.com/code/jabeen12/business-analysis-with-eda-statistics-data-vis/input" target="_blank">Kaggle</a>. It contains customer demographic and transactional information, which is useful for exploring marketing trends and behaviors. The dataset was cleaned and analyzed to create visualizations and extract insights.</p>
 
-### 1. Data Cleaning
+## Data Cleaning
 #### i) Correcting Date Format:
 - The Dt_Customer column contains date entries with multiple formats.
 - To standardize the dates, a custom function was applied to handle different date formats (MM/DD/YY and YYYY-MM-DD) and convert them to the format YYYY-MM-DD.
@@ -25,7 +25,7 @@ df['Dt_Customer_Corrected'] = df['Dt_Customer'].apply(parse_dates)
 # Fill missing 'Income' values based on Education level averages
 df['Income'] = df.apply(fill_missing_income, axis=1)
 ```
-### 2.Outlier Detection and Removal
+## Outlier Detection and Removal
 #### i) Age and Marital Status:
 - Identified outliers in the Year_Birth column to correct abnormal age entries.
 - Cleaned the Marital_Status column by removing incorrect or irrelevant values such as "Absurd" "YOLO" and "Alone".
@@ -45,7 +45,7 @@ filtered_data1 = filtered_data1[~filtered_data1['Marital_Status'].isin(['Alone',
 
 <img align="centre" alt="coding" width="500" src="https://github.com/CharishmaKondamuri/Marketing_EDA_and_Statistical_Analysis/blob/main/Results/Income%20Distribution%20with%20Outliers.png">
 
-### 3.Feature Engineering
+## Feature Engineering
 #### i) Total Purchases:
 - Created a new feature Total_Purchases, representing the sum of purchases made through different channels (Web, Store, Catalog).
 ```
@@ -66,44 +66,44 @@ sns.scatterplot(x=filtered_data2['Income'], y=filtered_data2['Total_Spending'])
 # Country-wise spending on wines
 sns.barplot(x='Country', y='MntWines', data=country_wine_spending)
 ```
-### Key Visualizations
-#### 1.Income Distribution
+## Key Visualizations
+#### 1. Income Distribution
 <p>This plot shows the distribution of customer income to identify patterns and detect outliers.</p>
 <img align="centre" alt="coding" width="500" src="https://github.com/CharishmaKondamuri/Marketing_EDA_and_Statistical_Analysis/blob/main/Results/Income%20Distribution.png">
 
-#### 2.Recency Distribution
+#### 2. Recency Distribution
 <p>This visualization highlights the recency of customer interactions, showing how recently customers made purchases.</p>
 <img align="centre" alt="coding" width="500" src="https://github.com/CharishmaKondamuri/Marketing_EDA_and_Statistical_Analysis/blob/main/Results/Recency%20Distribution.png">
 
-#### 3.Age Distribution
+#### 3. Age Distribution
 <p>The age distribution of customers, calculated from their year of birth, helps understand the age demographics.</p>
 <img align="centre" alt="coding" width="500" src="https://github.com/CharishmaKondamuri/Marketing_EDA_and_Statistical_Analysis/blob/main/Results/Age%20Distribution.png">
 
-#### 4.Total Purchase Distribution
+#### 4. Total Purchase Distribution
 <p>This plot displays the total number of purchases across different channels (Web, Store, and Catalog) per customer.</p>
 <img align="centre" alt="coding" width="500" src="https://github.com/CharishmaKondamuri/Marketing_EDA_and_Statistical_Analysis/blob/main/Results/Total%20Purchase%20Distribution.png">
 
-#### 5.Marital Status Distribution
+#### 5. Marital Status Distribution
 <p>A breakdown of the number of customers by their marital status to explore customer demographics.</p>
 <img align="centre" alt="coding" width="500" src="https://github.com/CharishmaKondamuri/Marketing_EDA_and_Statistical_Analysis/blob/main/Results/Marital%20Status%20Distribution.png">
 
-#### 6.Web Visits Vs Purchases
+#### 6. Web Visits Vs Purchases
 <p>A scatterplot showing the relationship between the number of web visits per month and the total purchases made by customers.</p>
 <img align="centre" alt="coding" width="500" src="https://github.com/CharishmaKondamuri/Marketing_EDA_and_Statistical_Analysis/blob/main/Results/Web%20Visits%20Vs%20Total%20Purchase.png">
 
-#### 7.Income Vs Spending
+#### 7. Income Vs Spending
 <p>This visualization shows how customer income correlates with their total spending across various product categories.</p>
 <img align="centre" alt="coding" width="500" src="https://github.com/CharishmaKondamuri/Marketing_EDA_and_Statistical_Analysis/blob/main/Results/Income%20Vs%20Total%20Spending.png">
 
-#### 8.Spending Distribution by Product Category
+#### 8. Spending Distribution by Product Category
 <p>A box plot depicting the spending distribution on different product categories, allowing the identification of outliers.</p>
 <img align="centre" alt="coding" width="500" src="https://github.com/CharishmaKondamuri/Marketing_EDA_and_Statistical_Analysis/blob/main/Results/Spending%20Distribution%20by%20Product%20Category.png">
 
-#### 9.Average Spending by Marital Status
+#### 9. Average Spending by Marital Status
 <p>This bar plot illustrates the average spending of customers on various product categories based on their marital status.</p>
 <img align="centre" alt="coding" width="500" src="https://github.com/CharishmaKondamuri/Marketing_EDA_and_Statistical_Analysis/blob/main/Results/Avg%20Spending%20by%20Marital%20Status.png">
 
-#### 10.Country Wise Spending on Wines
+#### 10. Country Wise Spending on Wines
 <p>A country-level analysis of total spending on wines, showing regional differences in customer purchasing behavior.</p>
 <img align="centre" alt="coding" width="500" src="https://github.com/CharishmaKondamuri/Marketing_EDA_and_Statistical_Analysis/blob/main/Results/Country%20wise%20spending%20on%20wines.png">
 
