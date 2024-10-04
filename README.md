@@ -88,23 +88,27 @@ sns.barplot(x='Country', y='MntWines', data=country_wine_spending)
 <p>A breakdown of the number of customers by their marital status to explore customer demographics.</p>
 <img align="centre" alt="coding" width="500" src="https://github.com/CharishmaKondamuri/Marketing_EDA_and_Statistical_Analysis/blob/main/Results/Marital%20Status%20Distribution.png">
 
-#### 6. Web Visits Vs Purchases
+#### 6. Correlation Heatmap
+<p>A visual representation of relationships between different variables, showing how features in the dataset are correlated.</p>
+<img align="centre" alt="coding" width="500" src="https://github.com/CharishmaKondamuri/Marketing_EDA_and_Statistical_Analysis_using_Python/blob/main/Results/Correlation%20Heatmap.png">
+
+#### 7. Web Visits Vs Purchases
 <p>A scatterplot showing the relationship between the number of web visits per month and the total purchases made by customers.</p>
 <img align="centre" alt="coding" width="500" src="https://github.com/CharishmaKondamuri/Marketing_EDA_and_Statistical_Analysis/blob/main/Results/Web%20Visits%20Vs%20Total%20Purchase.png">
 
-#### 7. Income Vs Spending
+#### 8. Income Vs Spending
 <p>This visualization shows how customer income correlates with their total spending across various product categories.</p>
 <img align="centre" alt="coding" width="500" src="https://github.com/CharishmaKondamuri/Marketing_EDA_and_Statistical_Analysis/blob/main/Results/Income%20Vs%20Total%20Spending.png">
 
-#### 8. Spending Distribution by Product Category
+#### 9. Spending Distribution by Product Category
 <p>A box plot depicting the spending distribution on different product categories, allowing the identification of outliers.</p>
 <img align="centre" alt="coding" width="500" src="https://github.com/CharishmaKondamuri/Marketing_EDA_and_Statistical_Analysis/blob/main/Results/Spending%20Distribution%20by%20Product%20Category.png">
 
-#### 9. Average Spending by Marital Status
+#### 10. Average Spending by Marital Status
 <p>This bar plot illustrates the average spending of customers on various product categories based on their marital status.</p>
 <img align="centre" alt="coding" width="500" src="https://github.com/CharishmaKondamuri/Marketing_EDA_and_Statistical_Analysis/blob/main/Results/Avg%20Spending%20by%20Marital%20Status.png">
 
-#### 10. Country Wise Spending on Wines
+#### 11. Country Wise Spending on Wines
 <p>A country-level analysis of total spending on wines, showing regional differences in customer purchasing behavior.</p>
 <img align="centre" alt="coding" width="500" src="https://github.com/CharishmaKondamuri/Marketing_EDA_and_Statistical_Analysis/blob/main/Results/Country%20wise%20spending%20on%20wines.png">
 
